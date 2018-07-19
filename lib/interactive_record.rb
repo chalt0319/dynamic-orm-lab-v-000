@@ -67,9 +67,9 @@ class InteractiveRecord
 
   def self.find_by(attribute:)
     binding.pry
-    sym = :attribute
-    sql = "SELECT * FROM #{table_name} WHERE #{sym.to_s} = ?"
-    DB[:conn].execute(sql, attribute)
+    # sym = :attribute
+    # sql = "SELECT * FROM #{table_name} WHERE #{sym.to_s} = ?"
+    # DB[:conn].execute(sql, attribute)
   end
 
 end
